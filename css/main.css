@@ -166,7 +166,13 @@ h2 {
 	margin-top: 6px;
 }
 
+.hidden-holder {
+	background-color: orange;
+	width: 370px;
+	height: 400px;
+	margin: 68px 150px 28px 150px;
 
+}
 
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
