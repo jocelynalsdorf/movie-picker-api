@@ -1,0 +1,148 @@
+
+/*General grid settings===================*/
+/*  SECTIONS  */
+body {
+	font-family: 'Lato', sans-serif;
+	 -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: 'Oleo Script', Helvetica, sans-serif;
+   -webkit-font-smoothing: antialiased;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  font-size: 5.3em;
+  text-align: center;
+	margin-top: -10px;
+	
+
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+                                               
+					
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+/* styling settings===================*/
+.main-wrapper {
+
+}
+
+.top {
+height: 100px;
+line-height: 1.7;
+}
+
+.below-top {
+	height:50%;
+	background-color: orange;
+}
+
+.let {
+	font-size: 1.5em;
+	margin: 0 auto;
+	text-align: center;
+}
+.main-content {
+height: 535px;
+}
+
+.bottom {
+height: 25px;
+}
+
+.col {
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+
+.col.span_1_of_4 {
+	background-color: pink;
+	height: 100%;
+}
+.col.span_3_of_4 {
+	background-color: yellow;
+	height: 100%;
+}
+
+.col.span_2_of_4 {
+	background-color: brown;
+	height: 100%;
+}
+
+.col.span_4_of_4 {
+	/*background-color: grey;*/
+	height: 100%;
+}
+
+.cat.col.span_2_of_4 {
+	/*background-image: url("../img/harold.jpeg");
+	height: 100%;*/
+}
+
+	
+}
+
+
+
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%;
+	}
+}
