@@ -103,7 +103,7 @@ height: 25px;
 }
 
 .col.span_2_of_4 {
-	background-color: brown;
+	/*background-color: brown;*/
 	height: 100%;
 }
 
@@ -117,9 +117,54 @@ height: 25px;
 	height: 100%;*/
 }
 
-	
+/*-----forms--------------------------*/	
+
+.form-container {
+	text-align:left;
+	width:300px;
+	float: left;
+	padding-top: 50px;
+	position: absolute;
+	left: 430px;
+	top: 245px;
+
+}
+form#user-info {
+	background-color: grey;
+	border-radius: 5px;
+}
+.form-description {
+	background-color: pink;
+	border-radius: 3px 3px 0 0;
+}
+form ul
+{
+	font-size:100%;
+	list-style-type:none;
+	margin:0;
+	padding:6px;
+	width:100%;
 }
 
+form li
+{
+	display:block;
+	margin:0;
+	padding:6px 5px 6px 9px;
+	position:relative;
+}
+
+h2 {
+	padding-bottom: 6px;
+	text-align: center;
+}
+
+.year-inputs {
+	padding-top: 10px;
+}
+.favorite {
+	margin-top: 6px;
+}
 
 
 
