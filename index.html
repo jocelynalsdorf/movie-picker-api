@@ -32,16 +32,41 @@
 
 	<div class="section group main-content">
 		<div class="cat col span_2_of_4">
-		<img src="images/harold.jpeg" alt="cat"/>
+		   <img src="images/harold.jpeg" alt="cat"/>
 		</div>
 		<div class="form-area col span_2_of_4">
-		
+			<div id="form-container">
+	<form id="user-info" class="user-info">
+		<div class="form_description">
+			<h2>Get a List of Movies</h2>
+			<p></p>
+		</div>						
+	<ul >	
+	 <li id="li_1" >
+		<label class="description">Tell Harold what year you were born </label>
+		<div>
+			<input id="year-element" name="element_1" placeholder="Use YYYY format" class="year-element" type="text" maxlength="20" value=""/> 
+		</div>
+	 </li>		
+	 <li id="li_2" >
+		<label class="description">Tell Harold which animal you like better </label>
+		   <input id="element-cat" name="element-radio" class="element radio" type="radio" value="1" />
+        <label class="choice">Cats</label>
+		   <input id="element-dog" name="element-radio" class="element radio" type="radio" value="2" />
+		<label class="choice">Dogs</label>
+	 </li>
+	 <li class="buttons">
+			<input id="submitform" class="submitbtn" type="submit" name="submit" value="Submit" />
+	 </li>
+	</ul>
+		</form>	
+		</div>
 		</div>
 	
 	</div>
 	<div class="section group bottom">
 	 	 <div class="col span_4_of_4">
-		1 of 4
+		icons go here
 	  	</div>
 	</div>
 
