@@ -72,9 +72,8 @@ line-height: 1.7;
 
 .below-top {
 	height:50%;
-	background-color: orange;
+	
 }
-
 .let {
 	font-size: 1.5em;
 	margin: 0 auto;
@@ -94,21 +93,21 @@ height: 25px;
 }
 
 .col.span_1_of_4 {
-	background-color: pink;
+	
 	height: 100%;
 }
 .col.span_3_of_4 {
-	background-color: yellow;
+	
 	height: 100%;
 }
 
 .col.span_2_of_4 {
-	/*background-color: brown;*/
+	
 	height: 100%;
 }
 
 .col.span_4_of_4 {
-	/*background-color: grey;*/
+	
 	height: 100%;
 }
 
@@ -130,11 +129,11 @@ height: 25px;
 
 }
 form#user-info {
-	background-color: grey;
+	
 	border-radius: 5px;
 }
 .form-description {
-	background-color: pink;
+	
 	border-radius: 3px 3px 0 0;
 }
 form ul
@@ -157,6 +156,17 @@ form li
 h2 {
 	padding-bottom: 6px;
 	text-align: center;
+	font-size: 1.275em;
+	font-family: "Lato", sans-serif;
+}
+
+li.buttons {
+	text-align: center;
+
+}
+
+input#submitform {
+	font-size: 1.25em;
 }
 
 .year-inputs {
@@ -167,14 +177,26 @@ h2 {
 }
 
 .hidden-holder {
-	background-color: orange;
-	width: 370px;
-	height: 400px;
-	margin: 68px 150px 28px 150px;
-
+	
+    background-image: url(../images/listpaper.jpeg);
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;
+    /*background-size: contain;*/
+	width: 385px;
+	height: 460px;
+	margin: 68px 110px 28px 150px;
+	z-index: 2;
+	font-family:'Schoolbell', cursive;
+	padding: 5px 15px 10px 15px;
+	
 }
-
-
+dt {
+	padding-bottom: 6px;
+	padding-left: 5px;
+}
+.hidden {
+	display: none;
+}
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {

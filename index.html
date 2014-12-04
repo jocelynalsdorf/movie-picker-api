@@ -5,7 +5,7 @@
 	<title>Harold the Movie Picker Cat</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato|Oleo+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato|Oleo+Script|Schoolbell' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="apps/main.js"></script>
 </head>
@@ -39,7 +39,7 @@
 	<div class="form-container">
 	<form id="user-info" class="user-info">
 		<div class="form-description">
-			<h2>Get a List of Movies</h2>
+			<h2>Step 1</h2>
 			<p></p>
 		</div>						
 	<ul >	
@@ -63,10 +63,22 @@
 	</ul>
 		</form>	
 		</div>
-		<div class="hidden-holder">
-			This is empty for now
+	  <div class="hidden-holder">
+			<h2>Step 2</h2>
+		<div class="templates hidden">
+		<dl class="result movie-list">
+			<dt>Name of Movie</dt>
+				<dd class="topic-text"><a href="" target="_blank"></a></dd>
+			<dt>Plot</dt>
+				<dd class="name-answerer"></dd>
+			<dt>Rating</dt>
+				<dd class="reputation"></dd>
+		</dl>
+		<div class="error">
+			<p>Uh-oh! Something went wrong with your request. Harold thinks the problem is:</p>
 		</div>
-		</div>
+
+	  </div>
 	
 	</div>
 	<div class="section group bottom">
