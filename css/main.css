@@ -85,6 +85,8 @@ height: 535px;
 
 .bottom {
 height: 25px;
+padding-bottom: 30px;
+padding-top: 25px;
 }
 
 .col {
@@ -197,6 +199,35 @@ dt {
 .hidden {
 	display: none;
 }
+
+.footer-icons  li {
+	display: inline-block;
+	color: #cdcdcd;
+	float: right;
+	padding-left: 5px;
+	margin-right: 10px;
+}
+ul.footer-icons {
+	margin-top: -8px;
+}
+.fa {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.footer-logo li {
+	display: inline-block;
+	color: #cdcdcd;
+	float:left;
+	margin-left: 10px;
+}
+li.down {
+	margin-top: 23px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
