@@ -11,7 +11,19 @@ $('.user-info').submit(function (event) {
 
         var fav = $(this).find("input[name='element-radio']:checked").val();
       
-		if(year === "" || fav === "") {
+		var whichList = function() {
+
+            if(fav === 1) {
+                getMovieListCat();
+            }
+            else if(fav === 2) {
+                getMovieListDog();
+            }
+        };
+
+
+
+        if(year === "" || fav === "") {
 		alert("You have not answered Harold's questions yet");
 		}
 		else {
@@ -20,15 +32,7 @@ $('.user-info').submit(function (event) {
 			}
 		});
 
-var whichList = function() {
 
-	if(fav === 1) {
-		getMovieListCat();
-	}
-	else if(fav === 2) {
-		getMovieListDog();
-	}
-};
 
 var showQuestion = function (question) {
 
