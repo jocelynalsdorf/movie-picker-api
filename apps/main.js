@@ -4,14 +4,14 @@ $('.user-info').submit(function (event) {
         event.preventDefault();
         // get the value of the tags the user submitted
         var year = $(this).find("input[name='element_1']").val();
-       	
+        
         //changes string to integer 
-       	var yearNum = parseInt(year);
-       	
+        var yearNum = parseInt(year);
+        
 
         var fav = $(this).find("input[name='element-radio']:checked").val();
       
-		var whichList = function() {
+        var whichList = function() {
 
             if(fav === 1) {
                 getMovieListCat();
@@ -24,13 +24,13 @@ $('.user-info').submit(function (event) {
 
 
         if(year === "" || fav === "") {
-		alert("You have not answered Harold's questions yet");
-		}
-		else {
-			whichList();
+        alert("You have not answered Harold's questions yet");
+        }
+        else {
+            whichList();
 
-			}
-		});
+            }
+        });
 
 
 
@@ -54,12 +54,12 @@ var showQuestion = function (question) {
 
 var getMovieListDog = function (yearNum) {
 
-	var results = $.ajax({
+    var results = $.ajax({
         url: "http://api.themoviedb.org/3/discover/movie?primary_release_year=" + yearNum + "&vote_average.lte=4.0&vote_count.gte=3&api_key=320a3fa0fbd7cfcae7cff15a4d705363",
         dataType: "json",
         type: "GET",
-   		 });
-	}
+         });
+    };
 
       /*  .done(function (results) {
         $.each(results.items, function (i, item) {
@@ -75,7 +75,7 @@ var results = $.ajax({
         dataType: "json",
         type: "GET",
     });
-}
+};
 
 
     /*    .done(function (results) {
