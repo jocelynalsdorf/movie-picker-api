@@ -19,7 +19,7 @@ $('.user-info').submit(function (event) {
 if(fav == 1) {
             
 
-        $.ajax({
+       $.ajax({
             type: 'GET',
             url: url + mode + "primary_release_year=" +yearNum+ "&vote_average.gte=7.0&vote_count.gte=3&" + key,
             async: false,
@@ -27,16 +27,28 @@ if(fav == 1) {
             contentType: 'application/json',
             dataType: 'jsonp',
             success: function(json) {
-                console.dir(json);
+                console.log(json);
+
+                var resultsArray = json.results;
+                var arrayLength = resultsArray.length;
+                for(var i = 0; i <arrayLength; i++) {
+                console.log(resultsArray[i].title);
+               }
+               
             },
             error: function(e) {
                 console.log(e.message);
+            
             }
-        });
+          
 
-            }
-            else if(fav == 2) {
-                $.ajax({
+  
+       });
+
+
+ }
+ else if(fav == 2) {
+        $.ajax({
             type: 'GET',
             url: url + mode + "primary_release_year=" +yearNum+ "&vote_average.lte=4.0&vote_count.gte=3&" + key,
             async: false,
@@ -44,13 +56,13 @@ if(fav == 1) {
             contentType: 'application/json',
             dataType: 'jsonp',
             success: function(json) {
-                console.dir(json);
+                console.log(json);
             },
             error: function(e) {
                 console.log(e.message);
             }
-        });
+            });
             }
-});
+    });
 
 });
