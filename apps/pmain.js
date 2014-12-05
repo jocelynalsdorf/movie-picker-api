@@ -33,13 +33,14 @@ if(fav == 1) {
                 var arrayLength = resultsArray.length;
                 for(var i = 0; i <arrayLength; i++) {
                 console.log(resultsArray[i].title, resultsArray[i].vote_average);
+                 $(".movie-title").append("<span> Movie Title: " + resultsArray[i].title + " Average rating: " +resultsArray[i].vote_average + "</span><br>"); 
 
                }
                
             },
+
             error: function(e) {
                 console.log(e.message);
-            
             }
           
 
@@ -62,7 +63,8 @@ if(fav == 1) {
                 var arrayLength = resultsArray.length;
                 for(var i = 0; i <arrayLength; i++) {
                 console.log(resultsArray[i].title, resultsArray[i].vote_average);
-                
+                $(".movie-title").append("<span> Movie Title: " + resultsArray[i].title + " Average rating: " +resultsArray[i].vote_average + "</span><br>"); 
+
                }
 
             },
@@ -71,6 +73,12 @@ if(fav == 1) {
             }
             });
             }
+
+
+
+
     });
+
+
 
 });

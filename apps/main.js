@@ -34,18 +34,18 @@ $('.user-info').submit(function (event) {
 
 
 
-var showQuestion = function (question) {
+var showList = function (arrayLength) {
 
     // clone our result template code
     var resulting = $('.templates .movie-list').clone();
 
     // Set the question properties in result
     var titleElem = resulting.find('.movie-title');
-    titleElem.text(question.title);
+    titleElem.text(resultsArray[i].title);
 
     // set the date asked property in result
     var ratings = resulting.find('.average-rating');
-    ratings.text(question.vote_average);
+    ratings.text(resultsArray[i].vote_average);
 
     return resulting;
 };
