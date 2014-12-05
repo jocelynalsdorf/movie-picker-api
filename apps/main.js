@@ -57,12 +57,12 @@ var getMovieListDog = function (yearNum) {
    		 });
 	}
 
-        .done(function (results) {
+      /*  .done(function (results) {
         $.each(results.items, function (i, item) {
             var question = showQuestion(item);
             $('.hidden-holder').append(question);
         });
-    });
+    });*/
 
 var getMovieListCat = function (yearNum) {
 
@@ -74,12 +74,12 @@ var results = $.ajax({
 }
 
 
-        .done(function (results) {
+    /*    .done(function (results) {
         $.each(results.items, function (i, item) {
             var question = showQuestion(item);
             $('.hidden-holder').append(question);
         });
-    });
+    });*/
 
 
 
