@@ -9,20 +9,27 @@ $('.user-info').submit(function (event) {
        	var yearNum = parseInt(year);
        	
 
-        //var fav = $(this).find("input[name='element-radio']:checked").val();
+        var fav = $(this).find("input[name='element-radio']:checked").val();
       
 		if(year === "" || fav === "") {
 		alert("You have not answered Harold's questions yet");
 		}
 		else {
-			$.getJSON("http://api.themoviedb.org/3/discover/movie?primary_release_year=&vote_average.lte=4.0&vote_count.gte=3&api_key=320a3fa0fbd7cfcae7cff15a4d705363", function(json) {
-		console.log(json);
+			whichList();
 
-			});
-                }
-    });
+			}
+		});
 
+var whichList = function() {
 
+	if(fav === 1) {
+		getMovieListCat();
+	}
+	else if(fav === 2) {
+		getMovieListDog();
+
+	}
+};
 
 var showQuestion = function (question) {
 
@@ -42,22 +49,23 @@ var showQuestion = function (question) {
 
 
 
-/*var getMovieListDog = function () {
+var getMovieListDog = function (yearNum) {
 
-	var results = 
-       
+	var results = $.ajax({
+        url: "http://api.themoviedb.org/3/discover/movie?primary_release_year=" + yearNum + "&vote_average.lte=4.0&vote_count.gte=3&api_key=320a3fa0fbd7cfcae7cff15a4d705363",
+        dataType: "json",
+        type: "GET",
    		 });
-	};
+	}
 
-
-     /*   .done(function (results) {
+        .done(function (results) {
         $.each(results.items, function (i, item) {
             var question = showQuestion(item);
             $('.hidden-holder').append(question);
         });
     });
 
-/*var getMovieListCat = function (yearNum) {
+var getMovieListCat = function (yearNum) {
 
 var results = $.ajax({
         url: "http://api.themoviedb.org/3/discover/movie?primary_release_year=" + yearNum + "&vote_average.gte=7.0&vote_count.gte=3&api_key=320a3fa0fbd7cfcae7cff15a4d705363",
@@ -72,7 +80,7 @@ var results = $.ajax({
             var question = showQuestion(item);
             $('.hidden-holder').append(question);
         });
-    });*/
+    });
 
 
 
