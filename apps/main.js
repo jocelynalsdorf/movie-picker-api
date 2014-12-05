@@ -27,7 +27,6 @@ var whichList = function() {
 	}
 	else if(fav === 2) {
 		getMovieListDog();
-
 	}
 };
 
