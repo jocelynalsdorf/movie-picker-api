@@ -32,7 +32,8 @@ if(fav == 1) {
                 var resultsArray = json.results;
                 var arrayLength = resultsArray.length;
                 for(var i = 0; i <arrayLength; i++) {
-                console.log(resultsArray[i].title);
+                console.log(resultsArray[i].title, resultsArray[i].vote_average);
+
                }
                
             },
@@ -57,6 +58,13 @@ if(fav == 1) {
             dataType: 'jsonp',
             success: function(json) {
                 console.log(json);
+                var resultsArray = json.results;
+                var arrayLength = resultsArray.length;
+                for(var i = 0; i <arrayLength; i++) {
+                console.log(resultsArray[i].title, resultsArray[i].vote_average);
+                
+               }
+
             },
             error: function(e) {
                 console.log(e.message);
