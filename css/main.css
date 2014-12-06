@@ -172,7 +172,7 @@ li.buttons {
 
 }
 
-input#submitform {
+input#submitform, input#resetform {
 	font-size: 1.25em;
 }
 
@@ -195,6 +195,7 @@ input#submitform {
 	z-index: 2;
 	font-family:'Schoolbell', cursive;
 	padding: 5px 15px 10px 15px;
+
 	
 }
 dt {
@@ -240,7 +241,13 @@ a {
 a:hover {
 	color:#6a6a6a;
 }
-
+dl.result.movie-list {
+	height: 407px;
+	overflow: hidden;
+}
+span {
+	line-height: 1.5em;
+}
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 

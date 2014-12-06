@@ -8,7 +8,9 @@ var url = 'http://api.themoviedb.org/3/',
 
 
 $('.user-info').submit(function (event) {
+          
         event.preventDefault();
+
         // get the value of the tags the user submitted
         var year = $(this).find("input[name='element_1']").val();
         
@@ -79,6 +81,10 @@ if(fav == 1) {
 
     });
 
+$('.userreset').submit(function (event) {
+   event.preventDefault();
+      window.location.reload();
 
+});
 
 });
