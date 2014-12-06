@@ -270,4 +270,45 @@ span {
 	.span_1_of_4 {
 		width: 100%;
 	}
+
+.top {
+	height: auto;
+	line-height: 5em;
+	padding-top: 25px;
+	
+}
+h1 {
+	font-size: 4.3em;
+}
+.cat img {
+	width: 100%;
+}
+.col.span_2_of_4 {
+	height: auto;
+}
+
+.form-container {
+	
+	text-align: left;
+	position: absolute;
+	left: 5px;
+	top: 650px;
+	
+}
+.hidden-holder {
+	width: 82%;
+	position: absolute;
+	left: 15px;
+	top: 950Px;
+	margin: 0 auto;
+
+}
+
+.section.group.bottom {
+	position: absolute;
+	top: 1450px;
+	left: 0;
+	width: 100%;
+
+}
 }
